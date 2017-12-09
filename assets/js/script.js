@@ -1,0 +1,11 @@
+$(function(){
+	$(".btn-contact").click(function(){
+		$("#contactinfo").fadeIn(200);
+	});
+});
+$(function(){
+	$("#contactinfo").click(function(){
+		$(this).fadeOut(200);
+	});
+});
+$("#contactinfo").hide();

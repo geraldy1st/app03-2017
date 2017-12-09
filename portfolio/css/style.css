@@ -1,0 +1,17 @@
+.vanish {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    background-color: #F38630;
+    border-radius: 5px;
+}
+.logo{
+    position: absolute;
+    color: #eee;
+    cursor: pointer;
+    line-height: 3em;
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 0 1em;
+    opacity: .5;
+}

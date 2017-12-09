@@ -1,0 +1,86 @@
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", Helvetica, sans-serif;
+}
+h1{
+    padding: 100px 0 0 0;
+}
+.wrap{
+    height: 100%;
+    widows: 100%;
+    position: relative;
+    overflow: hidden;
+    background: #1d242a;
+    color: #fff;
+    text-align: center;
+}
+header{
+    background: #3E4747;
+    box-shadow: 0 .5em 1em #111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+}
+header label{
+    color: #eee;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 4.25em;
+    font-size: 1.25em;
+/*    font-size: .667em;*/
+    font-weight: bold;
+    padding: 0 1em;
+}
+
+header label:hover{
+    background: #2e353b;
+}
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: auto;
+    bottom: 100%;
+    left: 0;
+    z-index: 10;
+    padding: 8em 1em 0;
+    background-color: #120103;
+    background-position: 50% 50%;
+    background-size: cover;
+    transition: bottom 0s .75s;
+}
+.slide-one{
+    background-image: url('../img/starryFarm.jpg');
+}
+.slide-two{
+    background-image: url('../img/campusDarkDays.jpg');
+}
+.slide-three{
+    background-image: url('../img/autumn.jpg');
+}
+.slide-four{
+    background-image: url('../img/lakehouse.jpg');
+}
+
+[id^="slide"]:checked + .slide{
+    bottom: 0;
+    z-index: 100;
+    transition: bottom .65s ease-out;
+}
+.slide h1{
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform .5s .5s, opacity .5s;
+}
+[id^="slide"]:checked + .slide h1{
+    opacity: 1;
+    transform: translateY(0);
+    transition: all .5s .5s;
+}
