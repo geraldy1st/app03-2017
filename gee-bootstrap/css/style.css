@@ -237,3 +237,11 @@ nav .logoG1{
               font-size: 1.7em;
           }
       }
+/*-------- porfolio----------*/
+.porfoliomsg{
+    background: #89d3be;
+    transform: translateY(50%);
+    width: 80%;
+    margin: 0 auto;
+    color: aliceblue;
+}
